@@ -1,0 +1,29 @@
+.third-blue-block__header {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 5px 0 30px;
+}
+#third-blue-block__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $active_regular;
+    &:hover img {
+        transform: translateX(50%);
+        transition-duration: 0.5s;
+    }
+}
+@media screen and (min-width: 700px) {
+    .third-blue-block__header {
+        margin-bottom: 59px;
+        font-size: 38px;
+        line-height: 46px;
+    }
+}

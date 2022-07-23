@@ -1,0 +1,18 @@
+.header__nav-btn {
+    justify-self: end;
+    background-color: transparent;
+    border: none;
+    padding: 0 14px 4px;
+    &:hover {
+        background: $gray_separator;
+        border-radius: 8px;
+    }
+}
+.header__nav-btn path {
+    stroke: $main_regular;
+}
+@media screen and (min-width: 700px) {
+    .header__nav-btn {
+        display: none;
+    }
+}

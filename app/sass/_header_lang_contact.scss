@@ -1,0 +1,90 @@
+.header__lang-contact {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    padding: 10px 15px;
+    background: rgba(245, 245, 250, 0.2);
+    &__btn {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        align-self: center;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+        padding: 5px 7px;
+        background: transparent;
+        border: none;
+        &:not(.is-active):hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+        }
+    }
+    &__btn.is-active {
+        width: 33px;
+        height: 25px;
+        background-color: $accent;
+        border-radius: 8px;
+    }
+    &__adress {
+        display: none;
+    }
+    &__phone {
+        align-self: center;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: auto;
+        color: #FFFFFF;
+    }
+    &__fb {
+        display: none;
+    }
+}
+@media screen and (min-width: 700px) {
+    .header__lang-contact {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding: 49px 60px 10px;
+        background: none;
+        margin-bottom: 18px;
+    }
+    .header__lang-contact__adress {
+        display: flex;
+        align-items: center;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    .header__lang-contact__phone {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+    }
+    .header__lang-contact__fb {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3px;
+        &:hover path{
+            fill: $accent;
+        }
+    }
+    .header__lang-contact__adress::before, .header__lang-contact__phone::before, .header__lang-contact__fb::before {
+        content: "";
+        background-color: $gray_separator;
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+        margin: 0 6px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .header__lang-contact {
+        grid-column: 2 / 3;
+        padding: 0;
+        margin: 0 60px 0 auto;
+    }
+    .header__lang-contact__adress::before {
+        margin: 0 3px;
+    }
+}

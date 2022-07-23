@@ -1,0 +1,115 @@
+.main-first-section {
+    padding-top: 60px;
+}
+.main-first-section__headder {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $main_regular;
+    margin-bottom: 30px;
+}
+.main-first-section__content__hillel-img {
+    display:grid;
+    place-content: center;
+    height: 120px;
+    background: #1C4280;
+}
+.main-first-section__content__wanna-biz-img {
+    display:grid;
+    place-content: center;
+    height: 120px;
+    background: #143646;
+}
+.main-first-section__content__tapgerine-img {
+    display:grid;
+    place-content: center;
+    height: 120px;
+    background: #F48B30;
+}
+.main-first-section__content__3d-look-img {
+    display:grid;
+    place-content: center;
+    height: 120px;
+    background: #9E4DC3;
+}
+.main-first-section__content__orangegear-img {
+    display:grid;
+    place-content: center;
+    height: 120px;
+    background: #FD9339;
+}
+.main-first-section__content__adtelige-img {
+    display:grid;
+    place-content: center;
+    height: 120px;
+    background: #E2E2E4;
+}
+.main-first-section__content__clickky-img {
+    display: none;
+}
+.main-first-section__content__ecol-easing-img {
+    display: none;
+}
+.main-first-section__content__infra-tek-img {
+    display: none;
+}
+.main-first-section__content__city-park-img {
+    display: none;
+}
+.main-first-section__content__art-print-studio-img {
+    display: none;
+}
+.main-first-section__content__ultimate-card-img {
+    display: none;
+}
+@media screen and (min-width: 700px) {
+    .main-first-section__content {
+        display: grid;
+        grid: repeat(4, 120px) / repeat(3, 1fr);
+        &__clickky-img {
+            display:grid;
+            place-content: center;
+            height: 120px;
+            background: #C71C36;
+        }
+        &__ecol-easing-img {
+            display:grid;
+            place-content: center;
+            height: 120px;
+            background: #DCF3F9;
+        }
+        &__infra-tek-img {
+            display:grid;
+            place-content: center;
+            height: 120px;
+            background: #EAEAEA;
+        }
+        &__city-park-img {
+            display:grid;
+            place-content: center;
+            height: 120px;
+            background: #282240;
+        }
+        &__art-print-studio-img {
+            display:grid;
+            place-content: center;
+            height: 120px;
+            background: #1D4568;
+        }
+        &__ultimate-card-img {
+            display:grid;
+            place-content: center;
+            height: 120px;
+            background: #000000;
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .main-first-section__content {
+        display: grid;
+        grid: repeat(3, 120px) / repeat(4, 1fr);
+    }
+}

@@ -1,0 +1,40 @@
+.header__nav {
+    display: none;
+    font-weight: 700;
+    line-height: 20px;
+    color: $active_regular;
+}
+@media screen and (min-width: 700px) {
+    .header__nav {
+        display: flex;
+        padding-left: 60px;
+        list-style: none;
+        & li {
+            margin-right: 16px;
+        }
+        & a {
+            text-decoration: none;
+            &:hover {
+                box-shadow: 0 2px $active_regular;
+            }
+        }
+    }
+    .header__nav__link {
+        display: inline-block;
+        font-weight: 700;
+        line-height: 20px;
+        color: $active_regular;
+    }
+    .header__nav__link-is-active {
+        color: $accent;
+        box-shadow: 0 2px $accent;
+        padding-bottom: 2px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .header__nav {
+        grid-row: -1 / -2;
+        padding: 0;
+        margin: 0 43px 0 auto;
+    }
+}

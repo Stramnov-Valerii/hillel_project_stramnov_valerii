@@ -1,0 +1,180 @@
+.footer-background {
+    background-color: $gray_bg;
+}
+.footer {
+    padding: 31px 0;
+    &__company-name {
+        line-height: 20px;
+        text-align: center;
+        color: $gray_text;
+    }
+    &__adress-block__adress {
+        text-align: center;
+        line-height: 20px;
+        color: $main_regular;
+        margin-bottom: 10px;
+    }
+    &__adress-block__map {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $active_regular;
+        margin-bottom: 20px;
+        &:hover {
+            color: $accent;
+        }
+    }
+    &__contact-block__fb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 11px;
+        &:hover path{
+            fill: $accent;
+        }
+    }
+    &__contact-block__tel {
+        display: block;
+        text-decoration: none;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+        color: $main_alt;
+        margin-bottom: 10px;
+    }
+    &__contact-block__e-mail {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 700;
+        line-height: 20px;
+        color: $active_regular;
+        margin-bottom: 30px;
+        &:hover {
+            color: $accent;
+        }
+    }
+}
+@media screen and (min-width: 700px) {
+    .footer {
+        display: grid;
+        grid: 1fr 1fr 1fr /  1fr;
+        align-items: center;
+        padding: 18px 60px;
+        &__company-name {
+            padding-top: 25px;
+        }
+        &__adress-block {
+            display: flex;
+            justify-self: center;
+            &__adress {
+                margin: 0;
+            }
+            &__map {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                &::before {
+                    content: "";
+                    background-color: $gray_text;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    margin: 0 10px 0 7px;
+                }
+            }
+        }
+        &__contact-block {
+            justify-self: center;
+            grid-row: 2 / 3;
+            display: flex;
+            &__fb {
+                margin: 5px 0;
+            }
+            &__tel {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                &::before {
+                    content: "";
+                    background-color: $gray_text;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    margin: 0 10px 0;
+                }
+            }
+            &__e-mail {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                &::before {
+                    content: "";
+                    background-color: $gray_text;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+    .footer__company-name {
+        grid-row: 3 / 4
+    }
+}
+@media screen and (min-width: 992px) {
+    .footer {
+        grid: 1fr 1fr / 1fr 1fr;
+        justify-content: space-between;
+        &__adress-block {
+            justify-self: start;
+            display: flex;
+        }
+        &__contact-block {
+            justify-self: start;
+            grid-column: 1 / 2 span;
+            display: flex;
+            &__fb {
+                margin: 5px 0;
+            }
+            &__tel {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                &::before {
+                    content: "";
+                    background-color: $gray_text;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    margin: 0 10px 0;
+                }
+            }
+            &__e-mail {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                &::before {
+                    content: "";
+                    background-color: $gray_text;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+    .footer__company-name {
+        justify-self: end;
+        grid-column: 2 / 3;
+        grid-row: -2 / -3;
+        padding: 0;
+    }
+}

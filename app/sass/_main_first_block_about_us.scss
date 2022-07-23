@@ -1,0 +1,89 @@
+.main__first-card {
+    margin-bottom: 29px;
+    &__header {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $gradient_red_text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 29px;
+    }
+    &__content {
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+}
+.main__first-list {
+    list-style: none;
+    padding: 0;
+    &__element {
+        padding-left: 30px;
+        padding-bottom: 39px;
+        border-left: 4px solid $gray_separator;
+    }
+    &__number {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        margin-left: 40px;
+        margin-bottom: 11px;
+        background: $gradient_red_text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+    }
+    &__content {
+        line-height: 20px;
+        color: $main_regular;
+    }
+    &__last-element {
+        padding-bottom: 0;
+    }
+}
+.main__first-list__content-third {
+    margin-bottom: 30px;
+}
+.main__first-list-first-element::before, .main__first-list-second-element::before, .main__first-list-third-element::before  {
+    content: '';
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: -35px;
+    top: 10px;
+}
+.main__first-list-first-element::before {
+    background-image: url(../img/relevant_experience_img.svg);
+}
+.main__first-list-second-element::before {
+    background-image: url(../img/active_clients_img.svg);
+}
+.main__first-list-third-element::before {
+    background-image: url(../img/ours_bono_work_img.svg);
+}
+@media screen and (min-width: 700px) {
+    .main__first-block {
+        margin-bottom: 58px;
+    }
+    .main__first-card__header {
+        font-size: 38px;
+        line-height: 46px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .main__first-block {
+        display: flex;
+        margin-bottom: 19px;
+    }
+    .main__first-card {
+        width: 57%;
+        padding-right: 30px;
+        margin-bottom: 0;
+    }
+    .main__first-list {
+        width: 43%;
+    }
+}
